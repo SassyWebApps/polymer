@@ -1,0 +1,32 @@
+
+On root folder, type the following to watch sass
+* sass --scss elements/test-element.scss elements/style/test-elements.css
+
+------------------------------------------------------
+(the main file)
+elements/test-element.scss
+
+(complie all css files in "style" folder)
+elements/style/test-elements.css
+
+
+
+-------------------------------------------------------
+
+root
+--> components
+--> elements
+	-->
+	--> style (folder for styling individual elements)
+	--> test  (a folder with a custom element)
+	------> _mixins.scss
+	------> test-element.scss
+--> src
+
+
+
+
+
+
+
+
