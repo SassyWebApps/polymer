@@ -1,0 +1,19 @@
+@mixin animation ($name, $duration, $delay, $ease) {
+    -webkit-animation: $name $duration $delay $ease;
+    -moz-animation:    $name $duration $delay $ease;
+    -ms-animation:     $name $duration $delay $ease;
+    -o-animation:      $name $duration $delay $ease;
+    animation:         $name $duration $delay $ease;
+}
+
+@mixin scale ($factor) {
+    -webkit-transform: scale($factor);
+    -moz-transform:    scale($factor);
+    -ms-transform:     scale($factor);
+    -o-transform:      scale($factor);
+    transform:         scale($factor);
+}
+
+@mixin scale-anim () {
+    to { @include scale(1.4); }
+}

@@ -1,0 +1,9 @@
+
+On root folder, type the following to watch sass
+- sass --scss src/my-element.scss src/my-element.css
+
+------------------------------------------------------
+
+src/my-element.scss = the sass file to watch
+
+src/my-element.css = the compilied file
