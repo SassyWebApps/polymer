@@ -7,11 +7,11 @@
 
 
 <!-- Define your custom element -->
-<polymer-element name="social-profile" >
+<polymer-element name="social-profile" attributes="name img">
 <!-- attributes="href name img" -->
     <template>
         <!-- <link rel="stylesheet" href="../style/social.css"> -->
-        <link rel="stylesheet" href="../style/profile.css">
+        <link rel="stylesheet" href="../style/social.css">
 
 
     	<div class="profile">
@@ -21,13 +21,13 @@
     		</div>
     			<!--  -->
 				<div class="s-media">
-					<social-media class="social1" icon="facebook" href="https://facebook.com"></social-media>
+					<social-media id="social1" icon="facebook"></social-media>
 					
-					<social-media class="social2" icon="twitter" href="https://twitter.com"></social-media>
+					<social-media id="social2" icon="twitter"></social-media>
 
-					<social-media class="social3" icon="github" href="https://github.com/SassyWebApps"></social-media>
+					<social-media id="social3" icon="github"></social-media>
 
-					<social-media class="social4" icon="linkedin" href="https://linkedin.com"></social-media>
+					<social-media id="social4" icon="linkedin"></social-media>
 				</div>
     	</div>
 			
