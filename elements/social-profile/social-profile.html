@@ -1,19 +1,49 @@
 <!-- Import Polymer -->
 <link rel="import" href="../../components/polymer/polymer.html">
 
+
+<link rel="import" href="../../src/social-media.html">
+
+
+
 <!-- Define your custom element -->
-<polymer-element name="social-profile">
-
+<polymer-element name="social-profile" >
+<!-- attributes="href name img" -->
     <template>
-        <link rel="stylesheet" href="../style/social-profile.css">
+        <!-- <link rel="stylesheet" href="../style/social.css"> -->
+        <link rel="stylesheet" href="../style/profile.css">
 
+
+    	<div class="profile">
+    		<div class="small-6 large-6 columns">
+    			<h3>{{name}}</h3>
+    			<img src="{{img}}">
+    		</div>
+    			<!--  -->
+				<div class="s-media">
+					<social-media class="social1" icon="facebook" href="https://facebook.com"></social-media>
+					
+					<social-media class="social2" icon="twitter" href="https://twitter.com"></social-media>
+
+					<social-media class="social3" icon="github" href="https://github.com/SassyWebApps"></social-media>
+
+					<social-media class="social4" icon="linkedin" href="https://linkedin.com"></social-media>
+				</div>
+    	</div>
+			
+			
 
 
     </template>
 
     <script>
     Polymer('social-profile', {
-    	// ready: function (){}
+    	/* 
+    	ready: function (){
+    		img: '',
+    		name: ''
+    	}
+    	*/
 
     });</script>
 
